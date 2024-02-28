@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preload" href="./assets/images/hero-banner.png"  as="image"/>
+</head>
+<body>
+  <header class="header">
+    <a href="#">
+      <img src="/assets/images/logo.svg" width="100" height="50" alt="Logo" class="logo"/>
+    </a>
+  
+    <nav>
+      <ul class="navbar">
+        <li><a href="/">Home</a></li>
+        <li><a class="active" href="/product.html">Products</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="card.html"><i id="bag" class="fa-solid fa-bag-shopping"></i></a></li>
+        <a href="#"><i id="close" class="fa-solid fa-xmark"></i></a>
+
+      </ul>
+    </nav>
+    <div class="menu">
+      <a href="card.html"><i id="bag" class="fa-solid fa-bag-shopping"></i></a>
+      <i id="menu" class="fa-solid fa-bars"></i>
+    </div>
+   </header>
+ 
+  
+  <!------ end of this section  ----->
+<sectoin class="product-details section-p1">
+  <div class="product-image">
+    <img src="assets/images/sport1.png" width="100%" id="mainImg" alt="Product Image">
+
+    <div class="small-img-group">
+      <div class="small-image-col">
+        <img src="assets/images/newmodel.png" width="100%" class="small-img" alt="">
+      </div>
+      <div class="small-image-col">
+        <img src="assets/images/Newnike.png" width="100%" class="small-img" alt="">
+      </div>
+      <div class="small-image-col">
+        <img src="assets/images/brand1.png" width="100%" class="small-img" alt="">
+      </div>
+      <div class="small-image-col">
+        <img src="assets/images/sport2.png" width="100%" class="small-img" alt="">
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="description">
+    <h6>Women / Men</h6>
+    <h4>Running Sneaker</h4>
+    <h3>$145.00</h3>
+    <select>
+      <option>Select Size</option>
+      <option >41</option>
+      <option >42</option>
+      <option >43</option>
+      <option >44</option>
+    </select>
+    <input type="number" value="1">
+    <button>Add to Cart</button>
+    <h4>Description:</h4>
+    <span>
+      Featuring a lightweight and breathable mesh upper, Nike Running Shoes provide optimal<br> airflow to keep your feet cool and comfortable mile after mile. The integrated Max Air unit<br> delivers responsive cushioning and impact protection, ensuring a smooth and comfortable ride with every step.
+    </span>
+  </div>
+</sectoin>
+
+  
+
+  <section class="newsletter section-p1 section-m1">
+
+    <div class="newstext">
+      <h4>Sign Up for Newslatter</h4>
+      <p>Subscribe to our newsletter and get exclusive deals and <span>Special Offers!</span></p>
+    </div>
+
+    <div class="form">
+      <input type="text" placeholder="Your Email Address">
+      <button>Sign Up</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="footer-container">
+    <div class="col">
+      <img class="logo" src="assets/images/logo.svg" width="80" alt="">
+      <h4>Contact</h4>
+      <p><strong>Address: </strong>IL Domitory Paramount Gading Serpong<br> Tangerang, Jakarta, Indonesia </p>
+      <p><strong>Phone: </strong>+62 821 2708 2650</p>
+      <p><strong>Hours: </strong>10:00 - 18:00 Mon - Sat</p>
+
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Card</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track My Order</a>
+      <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="appstore">
+        <i class="fa-brands fa-app-store"></i>
+        <i class="fa-brands fa-google-play"></i>
+      </div>
+      <p>Secure Payment Geteways</p>
+      <div class="payment-icon">
+      <i class="fa-brands fa-cc-visa"></i>
+      <i class="fa-brands fa-cc-mastercard"></i>
+      <i class="fa-brands fa-apple-pay"></i>
+      <i class="fa-brands fa-cc-amazon-pay"></i>
+      </div>
+    </div>
+    </div>
+    <div class="copyright">
+      <p><i class="fa-regular fa-copyright"></i> 2024, Made with <i class="fa-solid fa-heart"></i> by Ali Hekmati</p>
+    </div>
+  </footer>
+
+  <script>
+
+  const mainImage = document.querySelector("#mainImg");
+  const smallImages = document.querySelectorAll(".small-img");
+
+  smallImages.forEach(smallImage => {
+    smallImage.addEventListener("click", () => {
+      mainImage.src = smallImage.src;
+    })
+  });
+  
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
